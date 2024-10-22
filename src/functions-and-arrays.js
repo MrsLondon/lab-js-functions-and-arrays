@@ -22,6 +22,9 @@ const words = ["mystery", "brother", "aviator", "crocodile", "pearl", "orchard",
 //the current longestWord (eg current word is mytery it compare it with brother). 
 //If the current word is longer, longestWord will be updated to hold that word.
 function findLongestWord(arrayOfWords) {
+    if(arrayOfWords.length === 0){
+        return null;
+    } //check if the array is empty 
     let longestWord = ""; //empty so that we can save values which is the longest words
    for(let i = 0; i < arrayOfWords.length; i++) {
     if(arrayOfWords[i].length > longestWord.length){
